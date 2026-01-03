@@ -6,7 +6,7 @@
 
     <groupId>BungeePackFix</groupId>
     <artifactId>BungeePackFix</artifactId>
-    <version>1.1.6-beta1</version>
+    <version>1.1.7-beta1</version>
     <packaging>jar</packaging>
 
     <name>BungeePackFix</name>
@@ -174,13 +174,8 @@
             <scope>provided</scope>
         </dependency>
         <!-- Supports Minecraft 1.20.3 through 1.20.11 -->
-        <dependency>
-            <groupId>libs</groupId>
-            <artifactId>Waterfall</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${jars_libs_folder}/bungee/waterfall-1.20.4.jar</systemPath>
-        </dependency>
+        <!-- Note: Waterfall/BungeeCord dependency removed - API is provided at runtime by the server -->
+        <!-- If you need to compile BungeeCord code, add this dependency back with the correct path to waterfall jar -->
         <dependency>
             <groupId>com.velocitypowered</groupId>
             <artifactId>velocity-api</artifactId>
