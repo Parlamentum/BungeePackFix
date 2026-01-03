@@ -22,7 +22,7 @@ import java.util.UUID;
 // https://mappings.cephx.dev/1.20.3/net/minecraft/network/protocol/common/ServerboundResourcePackPacket.html
 public class ServerboundResourcePackPacket extends ServerboundPacket
 {
-    public UUID id = UUID.nameUUIDFromBytes("".getBytes()); // 1.20.4+
+    public UUID id = UUID.nameUUIDFromBytes("".getBytes()); // 1.20.3+ (up to 1.20.11)
     public int status;
 
     //<editor-fold desc="Reflection initialization stuff">

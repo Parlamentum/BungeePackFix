@@ -173,6 +173,7 @@
             <version>2.10.1</version>
             <scope>provided</scope>
         </dependency>
+        <!-- Supports Minecraft 1.20.3 through 1.20.11 -->
         <dependency>
             <groupId>libs</groupId>
             <artifactId>Waterfall</artifactId>

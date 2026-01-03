@@ -22,7 +22,7 @@ import java.util.UUID;
 // https://mappings.cephx.dev/1.20.3/net/minecraft/network/protocol/common/ClientboundResourcePackPushPacket.html
 public class ClientboundResourcePackPacket extends ClientboundPacket
 {
-    public UUID id = UUID.nameUUIDFromBytes("".getBytes()); // 1.20.4+
+    public UUID id = UUID.nameUUIDFromBytes("".getBytes()); // 1.20.3+ (up to 1.20.11)
     public String url;
     public String hash;
     public boolean required;
@@ -69,7 +69,7 @@ public class ClientboundResourcePackPacket extends ClientboundPacket
         );
     }
 
-    // 1.20.4+
+    // 1.20.3+ (up to 1.20.11)
     public ClientboundResourcePackPacket(final UUID id, final String url, final String hash)
     {
         this.id = id != null ? id : UUID.nameUUIDFromBytes("".getBytes());

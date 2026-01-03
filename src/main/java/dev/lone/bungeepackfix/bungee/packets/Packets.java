@@ -89,7 +89,9 @@ public class Packets
     public static boolean is1_20_3OrGreater(int clientVersion)
     {
         //https://wiki.vg/Protocol_version_numbers
-        return clientVersion == 765;
+        // Protocol version 765 is used for 1.20.3, 1.20.4, 1.20.5, 1.20.6 and later 1.20.x versions
+        // Support up to 1.20.11 (and beyond)
+        return clientVersion >= 765;
     }
 
     /**
